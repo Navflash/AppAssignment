@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="phoneApp.MainPage">
+    <!--xmlns:ViewModel="clr-namespace:phoneApp.ViewModel" x:DataType="ViewModel:MainViewModel"-->
+
+    <!--<ContentPage.BindingContext>
+        <ViewModel:MainViewModel/>
+    </ContentPage.BindingContext>-->
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="My Schedule" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <StackLayout>
+        <Button Text="Get Users" Clicked="Button_Clicked"/>
+            <Button Text="Upload image" Clicked="Button_Clicked_1"/>
+            <StackLayout  HorizontalOptions="Center" VerticalOptions="Start">
+                <Entry x:Name="txtUserId" Placeholder="Put UserId To Update and Delete"></Entry>
+                <Entry x:Name="txtName" Placeholder="Enter Person Name"></Entry>
+                <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                    <Button x:Name="btnAdd" WidthRequest="200" Text="Add" Clicked="BtnAdd_Clicked" />
+                    <Button x:Name="btnRead" WidthRequest="200" Text="Read" Clicked="BtnRead_Clicked" />
+                </StackLayout>
+                <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                    <Button x:Name="btnUpdate" WidthRequest="200" Text="Update" Clicked="BtnUpdate_Clicked"/>
+                    <Button x:Name="btnDelete" WidthRequest="200" Text="Delete" Clicked="BtnDelete_Clicked" />
+                </StackLayout>
+                <ListView x:Name="lstPersons">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Name}"></TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+             </StackLayout>
+        </StackLayout>
+    </ScrollView>
+    
+
+</ContentPage>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="phoneApp.Views.ImagePage"
+             xmlns:Imageeditor="clr-namespace:Syncfusion.SfImageEditor.XForms;assembly=Syncfusion.SfImageEditor.XForms"
+             xmlns:local="clr-namespace:phoneApp.Views">
+
+    <ContentPage.BindingContext>
+        <local:ImageModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <Imageeditor:SfImageEditor Source="{Binding Image}"/>
+    </ContentPage.Content>
+</ContentPage>
