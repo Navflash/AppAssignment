@@ -2,140 +2,148 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="phoneApp.Views.AllUsersPage"
-             xmlns:ViewModel="clr-namespace:phoneApp.ViewModel">
+             xmlns:ViewModel="clr-namespace:phoneApp.ViewModel" xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob">
 
     <ContentPage.BindingContext>
         <ViewModel:MainViewModel/>
     </ContentPage.BindingContext>
-    
+
     <ContentPage.Content>
-        <ScrollView>
-            <ListView ItemsSource="{Binding Userslist}"
-              HasUnevenRows="True">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Vertical" Padding="12,6" >
-                                <Label TextColor="DarkOrchid" FontSize="Title" HorizontalTextAlignment="Start">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="{Binding name}"/>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label TextColor="Black" FontSize="Medium">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="UserName: "/>
-                                            <Span Text="{Binding username}"/>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label TextColor="Black" FontSize="Medium">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="Email: "/>
-                                            <Span Text="{Binding email}"/>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label Text="Address" TextColor="DarkGreen" FontSize="Medium"/>
-                                <Label TextColor="Black" FontSize="Small">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="Street: "/>
-                                            <Span Text="{Binding address.street}"/>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label TextColor="Black" FontSize="Small">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="Suite: "/>
-                                            <Span Text="{Binding address.suite}"/>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label TextColor="Black" FontSize="Small">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="City: "/>
-                                            <Span Text="{Binding address.city}"/>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label TextColor="Black" FontSize="Small">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="City: "/>
-                                            <Span Text="{Binding address.zipcode}"/>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label Text="GeoLocation" TextColor="Black" FontSize="Small"/>
-                                <Label TextColor="Black" FontSize="Small">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="Latitude: "/>
-                                            <Span Text="{Binding address.geo.lat}"/>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label TextColor="Black" FontSize="Small">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="Longitude: "/>
-                                            <Span Text="{Binding address.geo.lng}"/>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label TextColor="Black" FontSize="Small">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="Phone: "/>
-                                            <Span Text="{Binding phone}"/>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label TextColor="Black" FontSize="Small">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="Website: "/>
-                                            <Span Text="{Binding website}"/>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label Text="Company" TextColor="Black" FontSize="Medium"/>
-                                <Label TextColor="Black" FontSize="Small">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="Name: "/>
-                                            <Span Text="{Binding company.name}"/>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label TextColor="Black" FontSize="Small">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="CatchPhrase: "/>
-                                            <Span Text="{Binding company.catchPhrase}"/>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label Text="{Binding company.bs}" TextColor="Black" FontSize="Small">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="bs: "/>
-                                            <Span Text="{Binding company.bs}"/>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <BoxView HeightRequest="1" Color="#000" IsVisible="{Binding IsSeparatorVisible}"/>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </ScrollView>
+        <Grid Margin="16,44,16,16">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ScrollView Grid.Row="0">
+                <StackLayout >
+                    <ListView ItemsSource="{Binding Userslist}" HasUnevenRows="True">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Vertical" Padding="12,6" >
+                                        <Label TextColor="DarkOrchid" FontSize="Title" HorizontalTextAlignment="Start">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding name}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label TextColor="Black" FontSize="Medium">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="UserName: "/>
+                                                    <Span Text="{Binding username}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label TextColor="Black" FontSize="Medium">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Email: "/>
+                                                    <Span Text="{Binding email}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label Text="Address" TextColor="DarkGreen" FontSize="Medium"/>
+                                        <Label TextColor="Black" FontSize="Small">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Street: "/>
+                                                    <Span Text="{Binding address.street}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label TextColor="Black" FontSize="Small">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Suite: "/>
+                                                    <Span Text="{Binding address.suite}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label TextColor="Black" FontSize="Small">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="City: "/>
+                                                    <Span Text="{Binding address.city}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label TextColor="Black" FontSize="Small">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="City: "/>
+                                                    <Span Text="{Binding address.zipcode}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label Text="GeoLocation" TextColor="Black" FontSize="Small"/>
+                                        <Label TextColor="Black" FontSize="Small">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Latitude: "/>
+                                                    <Span Text="{Binding address.geo.lat}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label TextColor="Black" FontSize="Small">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Longitude: "/>
+                                                    <Span Text="{Binding address.geo.lng}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label TextColor="Black" FontSize="Small">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Phone: "/>
+                                                    <Span Text="{Binding phone}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label TextColor="Black" FontSize="Small">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Website: "/>
+                                                    <Span Text="{Binding website}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label Text="Company" TextColor="Black" FontSize="Medium"/>
+                                        <Label TextColor="Black" FontSize="Small">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Name: "/>
+                                                    <Span Text="{Binding company.name}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label TextColor="Black" FontSize="Small">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="CatchPhrase: "/>
+                                                    <Span Text="{Binding company.catchPhrase}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label Text="{Binding company.bs}" TextColor="Black" FontSize="Small">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="bs: "/>
+                                                    <Span Text="{Binding company.bs}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <BoxView HeightRequest="1" Color="#000" IsVisible="{Binding IsSeparatorVisible}"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
+            <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" Grid.Row="1" IsVisible="True" HeightRequest="100" />
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

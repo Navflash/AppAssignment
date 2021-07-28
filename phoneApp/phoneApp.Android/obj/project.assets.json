@@ -2,6 +2,61 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v11.0": {
+      "instabug-for-android/10.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Linq": "4.1.6",
+          "System.Threading.Tasks.Extensions": "4.5.3",
+          "Xamarin.Android.ReactiveX.RxAndroid": "2.1.1",
+          "Xamarin.AndroidX.Browser": "1.0.0-preview02",
+          "Xamarin.AndroidX.Lifecycle.LiveData": "2.0.0-preview02",
+          "Xamarin.AndroidX.MultiDex": "2.0.1-preview03",
+          "Xamarin.Google.Android.Material": "1.0.0-preview02"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/monoandroid90/InstabugAndroidBugSDK.dll": {},
+          "lib/monoandroid90/InstabugAndroidChatSDK.dll": {},
+          "lib/monoandroid90/InstabugAndroidCoreSDK.dll": {},
+          "lib/monoandroid90/InstabugAndroidCrashSDK.dll": {},
+          "lib/monoandroid90/InstabugAndroidFeatureRequestSDK.dll": {},
+          "lib/monoandroid90/InstabugAndroidSurveySDK.dll": {},
+          "lib/monoandroid90/InstabugXamarinAndroidSDK.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/InstabugAndroidBugSDK.dll": {},
+          "lib/monoandroid90/InstabugAndroidChatSDK.dll": {},
+          "lib/monoandroid90/InstabugAndroidCoreSDK.dll": {},
+          "lib/monoandroid90/InstabugAndroidCrashSDK.dll": {},
+          "lib/monoandroid90/InstabugAndroidFeatureRequestSDK.dll": {},
+          "lib/monoandroid90/InstabugAndroidSurveySDK.dll": {},
+          "lib/monoandroid90/InstabugXamarinAndroidSDK.dll": {}
+        }
+      },
+      "MarcTron.Admob/1.6.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.1.0.8",
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Forms": "5.0.0.1905",
+          "Xamarin.GooglePlayServices.Ads.Lite": "119.6.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/Plugin.MtAdmob.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/Plugin.MtAdmob.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -222,6 +277,32 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
+      "System.Reactive/4.1.6": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.WindowsRuntime": "4.3.0",
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Reactive.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Reactive.dll": {}
+        }
+      },
+      "System.Reactive.Linq/4.1.6": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "4.1.6",
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Reactive.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Reactive.Linq.dll": {}
+        }
+      },
       "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "compile": {
@@ -229,6 +310,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
         }
       },
       "System.Text.Encodings.Web/5.0.1": {
@@ -253,6 +343,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Text.Json.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
         }
       },
       "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
@@ -386,6 +485,49 @@
         },
         "build": {
           "build/monoandroid90/Xamarin.Android.Arch.Lifecycle.ViewModel.targets": {}
+        }
+      },
+      "Xamarin.Android.ReactiveStreams/1.0.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid50/Xamarin.Android.ReactiveStreams.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid50/Xamarin.Android.ReactiveStreams.dll": {}
+        }
+      },
+      "Xamarin.Android.ReactiveX.RxAndroid/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.ReactiveStreams": "1.0.2",
+          "Xamarin.Android.ReactiveX.RxJava": "2.2.7"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid50/Xamarin.Android.ReactiveX.RxAndroid.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid50/Xamarin.Android.ReactiveX.RxAndroid.dll": {}
+        }
+      },
+      "Xamarin.Android.ReactiveX.RxJava/2.2.7": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.ReactiveStreams": "1.0.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid50/Xamarin.Android.ReactiveX.RxJava.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid50/Xamarin.Android.ReactiveX.RxJava.dll": {}
         }
       },
       "Xamarin.Android.Support.Annotations/28.0.0.3": {
@@ -2154,6 +2296,46 @@
           "buildTransitive/monoandroid50/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
+      "Xamarin.GooglePlayServices.Ads.Base/119.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Base.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Base.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/_._": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Ads.Lite/119.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Work.Runtime": "2.4.0",
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.GooglePlayServices.Ads.Base": "119.6.0",
+          "Xamarin.GooglePlayServices.Basement": "117.5.0",
+          "Xamarin.GooglePlayServices.Measurement.Sdk.Api": "118.0.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Lite.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Lite.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/_._": {}
+        }
+      },
       "Xamarin.GooglePlayServices.Base/117.6.0": {
         "type": "package",
         "dependencies": {
@@ -2196,6 +2378,45 @@
         },
         "build": {
           "build/MonoAndroid90/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Measurement.Base/118.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.GooglePlayServices.Basement": "117.5.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Base.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Base.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/_._": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Measurement.Sdk.Api/118.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.GooglePlayServices.Basement": "117.5.0",
+          "Xamarin.GooglePlayServices.Measurement.Base": "118.0.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/_._": {}
         }
       },
       "Xamarin.GooglePlayServices.Stats/71.1601.0": {
@@ -2254,6 +2475,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MarcTron.Admob": "1.6.1",
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "13.0.1",
           "Plugin.FirebasePushNotification": "3.3.10",
@@ -2277,6 +2499,42 @@
     }
   },
   "libraries": {
+    "instabug-for-android/10.7.0": {
+      "sha512": "m6pBbjjgk+ZaB6AgeuccEEA3NtND0LVCThRJtRt7nrj7357icdMv6WmTj1J0yJSz4sGRBgIVJusIQ167tJLXiQ==",
+      "type": "package",
+      "path": "instabug-for-android/10.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "instabug-for-android.10.7.0.nupkg.sha512",
+        "instabug-for-android.nuspec",
+        "lib/monoandroid90/InstabugAndroidBugSDK.dll",
+        "lib/monoandroid90/InstabugAndroidChatSDK.dll",
+        "lib/monoandroid90/InstabugAndroidCoreSDK.dll",
+        "lib/monoandroid90/InstabugAndroidCrashSDK.dll",
+        "lib/monoandroid90/InstabugAndroidFeatureRequestSDK.dll",
+        "lib/monoandroid90/InstabugAndroidSurveySDK.dll",
+        "lib/monoandroid90/InstabugXamarinAndroidSDK.dll"
+      ]
+    },
+    "MarcTron.Admob/1.6.1": {
+      "sha512": "I9tbe3YIwuBtfYuM8XFNx6NIyy4ln1QVBQv/SZUHUsKKnLiyaZGeTaYF3eg02t94i0qsWbR4KkaSBGJ+99D10g==",
+      "type": "package",
+      "path": "marctron.admob/1.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/Plugin.MtAdmob.dll",
+        "lib/netstandard1.0/Plugin.MtAdmob.dll",
+        "lib/netstandard2.0/Plugin.MtAdmob.dll",
+        "lib/uap10.0.18362/Plugin.MtAdmob.dll",
+        "lib/uap10.0.18362/Plugin.MtAdmob.pri",
+        "lib/xamarinios10/Plugin.MtAdmob.dll",
+        "marctron.admob.1.6.1.nupkg.sha512",
+        "marctron.admob.nuspec",
+        "readme.txt"
+      ]
+    },
     "Microsoft.Bcl/1.1.10": {
       "sha512": "+tTqoh/M1pyL8El3qLy30EcwnAtyvFoDZJtdG9Cbg/WdFbh4N8kyrq198XHuEL7lnJbeD0DRO8jcX5IIOh05cQ==",
       "type": "package",
@@ -2817,6 +3075,45 @@
         "version.txt"
       ]
     },
+    "System.Reactive/4.1.6": {
+      "sha512": "mPLRPf2tql0Af4RcJRVPWiGxhJCbPQFNr74Qq0rDf+QXt8KV/SzYl9/NK604zf0s8Yu3hwelmCsDCjqp5SJoJA==",
+      "type": "package",
+      "path": "system.reactive/4.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net46/System.Reactive.dll",
+        "lib/net46/System.Reactive.xml",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.16299/System.Reactive.dll",
+        "lib/uap10.0.16299/System.Reactive.pri",
+        "lib/uap10.0.16299/System.Reactive.xml",
+        "lib/uap10.0/System.Reactive.dll",
+        "lib/uap10.0/System.Reactive.pri",
+        "lib/uap10.0/System.Reactive.xml",
+        "system.reactive.4.1.6.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    },
+    "System.Reactive.Linq/4.1.6": {
+      "sha512": "F92KwaSnDHSd6w9Hqvb1uQoua9TH/09tFa3ILos7/RiR62aqpTszMaC6IDXOlead6ry2Nxs4j1EZT/tON8KJpw==",
+      "type": "package",
+      "path": "system.reactive.linq/4.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net46/System.Reactive.Linq.dll",
+        "lib/net46/System.Reactive.Linq.xml",
+        "lib/netstandard2.0/System.Reactive.Linq.dll",
+        "lib/netstandard2.0/System.Reactive.Linq.xml",
+        "lib/uap10.0/System.Reactive.Linq.dll",
+        "lib/uap10.0/System.Reactive.Linq.pri",
+        "lib/uap10.0/System.Reactive.Linq.xml",
+        "system.reactive.linq.4.1.6.nupkg.sha512",
+        "system.reactive.linq.nuspec"
+      ]
+    },
     "System.Runtime.CompilerServices.Unsafe/5.0.0": {
       "sha512": "ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
       "type": "package",
@@ -2847,6 +3144,67 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
+      "sha512": "J4GUi3xZQLUBasNwZnjrffN8i5wpHrBtZoLG+OhRyGo/+YunMRWWtwoMDlUAIdmX0uRfpHIBDSV6zyr3yf00TA==",
+      "type": "package",
+      "path": "system.runtime.interopservices.windowsruntime/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "lib/netstandard1.3/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios1/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "ref/netcore50/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/de/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/es/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/fr/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/it/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/ja/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/ko/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/ru/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/zh-hans/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/zh-hant/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "ref/netstandard1.0/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/de/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/es/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/fr/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/it/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/ja/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/ko/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/ru/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/zh-hans/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/zh-hant/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/aot/lib/netcore50/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
+        "system.runtime.interopservices.windowsruntime.nuspec"
       ]
     },
     "System.Text.Encodings.Web/5.0.1": {
@@ -2893,6 +3251,41 @@
         "lib/netstandard2.0/System.Text.Json.xml",
         "system.text.json.5.0.2.nupkg.sha512",
         "system.text.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Threading.Tasks.Extensions/4.5.3": {
+      "sha512": "+MvhNtcvIbqmhANyKu91jQnvIRVSTiaOiFNfKWwXGHG48YAb4I/TyH8spsySiPYla7gKal5ZnF3teJqZAximyQ==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.3.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -3032,6 +3425,45 @@
         "proguard/monoandroid90/proguard.txt",
         "xamarin.android.arch.lifecycle.viewmodel.1.1.1.3.nupkg.sha512",
         "xamarin.android.arch.lifecycle.viewmodel.nuspec"
+      ]
+    },
+    "Xamarin.Android.ReactiveStreams/1.0.2": {
+      "sha512": "AojTZNQEPzT9+Vo8W8oWbZOkgON+Ay9h5quUefqFcU7dunnmOCYgZbIgi4QZZeUsB5Q4VzAilP13gWK/GvbZQQ==",
+      "type": "package",
+      "path": "xamarin.android.reactivestreams/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/monoandroid50/Xamarin.Android.ReactiveStreams.dll",
+        "xamarin.android.reactivestreams.1.0.2.nupkg.sha512",
+        "xamarin.android.reactivestreams.nuspec"
+      ]
+    },
+    "Xamarin.Android.ReactiveX.RxAndroid/2.1.1": {
+      "sha512": "BWGvuSs4CuCyVdg3Y3GVszt+zrj1mKeuHzupK88mpB+lWHSTtDTqYjhR5Wi0N0vTlF1FkHULCu1Bh0RYOwFOnA==",
+      "type": "package",
+      "path": "xamarin.android.reactivex.rxandroid/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/monoandroid50/Xamarin.Android.ReactiveX.RxAndroid.dll",
+        "xamarin.android.reactivex.rxandroid.2.1.1.nupkg.sha512",
+        "xamarin.android.reactivex.rxandroid.nuspec"
+      ]
+    },
+    "Xamarin.Android.ReactiveX.RxJava/2.2.7": {
+      "sha512": "lsodn4lh+CGJPpOzZ6YZqPJ3/AMYHyMyBlrvqrOoz6jhVPcx9LJYOjjJh0IlOpzrkOy8N4nMLqTO9+9a8FQrJg==",
+      "type": "package",
+      "path": "xamarin.android.reactivex.rxjava/2.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/monoandroid50/Xamarin.Android.ReactiveX.RxJava.dll",
+        "xamarin.android.reactivex.rxjava.2.2.7.nupkg.sha512",
+        "xamarin.android.reactivex.rxjava.nuspec"
       ]
     },
     "Xamarin.Android.Support.Annotations/28.0.0.3": {
@@ -4966,6 +5398,35 @@
         "xamarin.google.guava.listenablefuture.nuspec"
       ]
     },
+    "Xamarin.GooglePlayServices.Ads.Base/119.6.0": {
+      "sha512": "diUS77imb8bHoV60z9bhWkw7WrbwWAE8Qk9JB21yjzShUaoDRJXVf5BHHTtKiIcDLGyV1Edrwunk5usi6p0mcA==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.ads.base/119.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Ads.Base.targets",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Base.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Base.pdb",
+        "xamarin.googleplayservices.ads.base.119.6.0.nupkg.sha512",
+        "xamarin.googleplayservices.ads.base.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Ads.Lite/119.6.0": {
+      "sha512": "j4UhAhYu73LfjEBIm2h3jnK4hfYNRPTjGuDxYqXDeK+veY/L+2TYjCUvmx1PnJXe9P3LpqYNe5LAGrHsx9yUuA==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.ads.lite/119.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Ads.Lite.targets",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Lite.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Lite.pdb",
+        "proguard/MonoAndroid90/proguard.txt",
+        "xamarin.googleplayservices.ads.lite.119.6.0.nupkg.sha512",
+        "xamarin.googleplayservices.ads.lite.nuspec"
+      ]
+    },
     "Xamarin.GooglePlayServices.Base/117.6.0": {
       "sha512": "0jP29wv5VgiaRIwXbysbfUc00ts2XdVMT5H6z1fQr8dGf9AxoeDrnJjkojd9RSUQkNwUkqsCSR7MR5rCjnjvWA==",
       "type": "package",
@@ -4995,6 +5456,36 @@
         "proguard/MonoAndroid90/proguard.txt",
         "xamarin.googleplayservices.basement.117.6.0.nupkg.sha512",
         "xamarin.googleplayservices.basement.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Measurement.Base/118.0.0": {
+      "sha512": "YchDWHZRmqEsyFgPHioJa4f5cd/UomRGymfTQ0TmJcBvV8IQbbqd+PjFZtFmTdLnke0WxR62HzeJqaCjZXz85g==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.measurement.base/118.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Measurement.Base.targets",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Base.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Base.pdb",
+        "proguard/MonoAndroid90/proguard.txt",
+        "xamarin.googleplayservices.measurement.base.118.0.0.nupkg.sha512",
+        "xamarin.googleplayservices.measurement.base.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Measurement.Sdk.Api/118.0.0": {
+      "sha512": "iuhoiVEuWCpVurmT26yUGSv1BPdUudA/xhwOZsGvEaPNho3koV/g7UVwNd4YMeVDKv+w3bJF0FiJ5DGYqyWQuA==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.measurement.sdk.api/118.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.targets",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.pdb",
+        "proguard/MonoAndroid90/proguard.txt",
+        "xamarin.googleplayservices.measurement.sdk.api.118.0.0.nupkg.sha512",
+        "xamarin.googleplayservices.measurement.sdk.api.nuspec"
       ]
     },
     "Xamarin.GooglePlayServices.Stats/71.1601.0": {
@@ -5048,6 +5539,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v11.0": [
+      "MarcTron.Admob >= 1.6.1",
       "Microsoft.Net.Http >= 2.2.29",
       "Newtonsoft.Json >= 13.0.1",
       "Plugin.LocalNotification >= 8.0.1",
@@ -5060,6 +5552,7 @@
       "Xamarin.FFImageLoading.Transformations >= 2.4.11.982",
       "Xamarin.Forms >= 5.0.0.2083",
       "Xamarin.GooglePlayServices.Base >= 117.6.0",
+      "instabug-for-android >= 10.7.0",
       "phoneApp >= 1.0.0",
       "sqlite-net-pcl >= 1.7.335"
     ]
@@ -5109,6 +5602,10 @@
     "frameworks": {
       "monoandroid11.0": {
         "dependencies": {
+          "MarcTron.Admob": {
+            "target": "Package",
+            "version": "[1.6.1, )"
+          },
           "Microsoft.Net.Http": {
             "target": "Package",
             "version": "[2.2.29, )"
@@ -5156,6 +5653,10 @@
           "Xamarin.GooglePlayServices.Base": {
             "target": "Package",
             "version": "[117.6.0, )"
+          },
+          "instabug-for-android": {
+            "target": "Package",
+            "version": "[10.7.0, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

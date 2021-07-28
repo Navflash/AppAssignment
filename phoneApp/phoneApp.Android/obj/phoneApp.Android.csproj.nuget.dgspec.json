@@ -44,6 +44,10 @@
       "frameworks": {
         "monoandroid11.0": {
           "dependencies": {
+            "MarcTron.Admob": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
             "Microsoft.Net.Http": {
               "target": "Package",
               "version": "[2.2.29, )"
@@ -91,6 +95,10 @@
             "Xamarin.GooglePlayServices.Base": {
               "target": "Package",
               "version": "[117.6.0, )"
+            },
+            "instabug-for-android": {
+              "target": "Package",
+              "version": "[10.7.0, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -142,6 +150,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "MarcTron.Admob": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
             "Microsoft.Net.Http": {
               "target": "Package",
               "version": "[2.2.29, )"

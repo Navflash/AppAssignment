@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2V+FmxpPL7tLm8l3BPoc05Be5G32VnTg2LIZpRv6NWMozjj+9ZKDGUy1DNXXMI4ue9lkqHVgY1cC8A1ucitqzw==",
+  "dgSpecHash": "UAqqsXBGsIJJE9PMMALQvBOgN1fBkO58zGwEVlGbMEGajXogale94ZmhbppGjOc3lCsKLAnKzhDvt5UGEbB5nQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\nvnt2\\source\\repos\\phoneApp\\phoneApp\\phoneApp.iOS\\phoneApp.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nvnt2\\.nuget\\packages\\marctron.admob\\1.6.1\\marctron.admob.1.6.1.nupkg.sha512",
     "C:\\Users\\nvnt2\\.nuget\\packages\\microsoft.bcl\\1.1.10\\microsoft.bcl.1.1.10.nupkg.sha512",
     "C:\\Users\\nvnt2\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\nvnt2\\.nuget\\packages\\microsoft.bcl.build\\1.0.14\\microsoft.bcl.build.1.0.14.nupkg.sha512",
@@ -31,10 +32,11 @@
     "C:\\Users\\nvnt2\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
     "C:\\Users\\nvnt2\\.nuget\\packages\\xamarin.ffimageloading.transformations\\2.4.11.982\\xamarin.ffimageloading.transformations.2.4.11.982.nupkg.sha512",
     "C:\\Users\\nvnt2\\.nuget\\packages\\xamarin.firebase.ios.cloudmessaging\\4.3.0\\xamarin.firebase.ios.cloudmessaging.4.3.0.nupkg.sha512",
-    "C:\\Users\\nvnt2\\.nuget\\packages\\xamarin.firebase.ios.core\\6.6.6\\xamarin.firebase.ios.core.6.6.6.nupkg.sha512",
+    "C:\\Users\\nvnt2\\.nuget\\packages\\xamarin.firebase.ios.core\\6.10.4\\xamarin.firebase.ios.core.6.10.4.nupkg.sha512",
     "C:\\Users\\nvnt2\\.nuget\\packages\\xamarin.firebase.ios.installations\\1.1.1\\xamarin.firebase.ios.installations.1.1.1.nupkg.sha512",
     "C:\\Users\\nvnt2\\.nuget\\packages\\xamarin.firebase.ios.instanceid\\4.3.3\\xamarin.firebase.ios.instanceid.4.3.3.nupkg.sha512",
     "C:\\Users\\nvnt2\\.nuget\\packages\\xamarin.forms\\5.0.0.2083\\xamarin.forms.5.0.0.2083.nupkg.sha512",
+    "C:\\Users\\nvnt2\\.nuget\\packages\\xamarin.google.ios.mobileads\\7.66.0\\xamarin.google.ios.mobileads.7.66.0.nupkg.sha512",
     "C:\\Users\\nvnt2\\.nuget\\packages\\xamforms.enhanced.calendar\\1.4.0\\xamforms.enhanced.calendar.1.4.0.nupkg.sha512"
   ],
   "logs": []

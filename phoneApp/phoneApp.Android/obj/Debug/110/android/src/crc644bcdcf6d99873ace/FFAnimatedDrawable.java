@@ -62,6 +62,22 @@ public class FFAnimatedDrawable
 			mono.android.TypeManager.Activate ("FFImageLoading.Drawables.FFAnimatedDrawable, FFImageLoading.Platform", "Android.Graphics.Bitmap, Mono.Android", this, new java.lang.Object[] { p0 });
 	}
 
+
+	public FFAnimatedDrawable (java.io.InputStream p0)
+	{
+		super (p0);
+		if (getClass () == FFAnimatedDrawable.class)
+			mono.android.TypeManager.Activate ("FFImageLoading.Drawables.FFAnimatedDrawable, FFImageLoading.Platform", "System.IO.Stream, mscorlib", this, new java.lang.Object[] { p0 });
+	}
+
+
+	public FFAnimatedDrawable (java.lang.String p0)
+	{
+		super (p0);
+		if (getClass () == FFAnimatedDrawable.class)
+			mono.android.TypeManager.Activate ("FFImageLoading.Drawables.FFAnimatedDrawable, FFImageLoading.Platform", "System.String, mscorlib", this, new java.lang.Object[] { p0 });
+	}
+
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)
 	{

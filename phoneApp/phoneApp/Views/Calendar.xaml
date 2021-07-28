@@ -1,20 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar"
+             xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar" xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
              x:Class="phoneApp.Views.Calendar">
 
 
     <StackLayout>
         <Grid Margin="16,44,16,16">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
             <Label
-            HorizontalOptions="CenterAndExpand"
+            HorizontalOptions="Center"
             Text="Calendar" 
             VerticalOptions="CenterAndExpand" />
             <controls:Calendar
@@ -31,7 +32,8 @@
             StartDay="Monday"
             TitleLabelTextColor="Purple"
             TitleLeftArrowTextColor="Blue" />
+            <Button Text="Add Reminder" Grid.Row="2" Clicked="Button_Clicked"/>
+            <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" Grid.Row="3" IsVisible="True" HeightRequest="100" />
         </Grid>
-        <Button Text="Add Reminder" Clicked="Button_Clicked"/>
     </StackLayout>
 </ContentPage>

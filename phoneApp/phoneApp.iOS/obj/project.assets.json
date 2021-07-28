@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "MarcTron.Admob/1.6.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Forms": "5.0.0.1905",
+          "Xamarin.Google.iOS.MobileAds": "7.66.0"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -328,7 +342,7 @@
           "lib/xamarinios10/Firebase.CloudMessaging.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.Core/6.6.6": {
+      "Xamarin.Firebase.iOS.Core/6.10.4": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0"
@@ -502,6 +516,25 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Google.iOS.MobileAds/7.66.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.10.4"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.MobileAds.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.MobileAds.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.Google.iOS.MobileAds.targets": {}
+        }
+      },
       "XamForms.Enhanced.Calendar/1.4.0": {
         "type": "package",
         "dependencies": {
@@ -520,6 +553,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MarcTron.Admob": "1.6.1",
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "13.0.1",
           "Plugin.FirebasePushNotification": "3.3.10",
@@ -542,6 +576,20 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "MarcTron.Admob/1.6.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Forms": "5.0.0.1905",
+          "Xamarin.Google.iOS.MobileAds": "7.66.0"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -868,7 +916,7 @@
           "lib/xamarinios10/Firebase.CloudMessaging.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.Core/6.6.6": {
+      "Xamarin.Firebase.iOS.Core/6.10.4": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0"
@@ -1042,6 +1090,25 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Google.iOS.MobileAds/7.66.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.10.4"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.MobileAds.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.MobileAds.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.Google.iOS.MobileAds.targets": {}
+        }
+      },
       "XamForms.Enhanced.Calendar/1.4.0": {
         "type": "package",
         "dependencies": {
@@ -1060,6 +1127,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MarcTron.Admob": "1.6.1",
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "13.0.1",
           "Plugin.FirebasePushNotification": "3.3.10",
@@ -1082,6 +1150,20 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "MarcTron.Admob/1.6.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Forms": "5.0.0.1905",
+          "Xamarin.Google.iOS.MobileAds": "7.66.0"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -1408,7 +1490,7 @@
           "lib/xamarinios10/Firebase.CloudMessaging.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.Core/6.6.6": {
+      "Xamarin.Firebase.iOS.Core/6.10.4": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0"
@@ -1582,6 +1664,25 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Google.iOS.MobileAds/7.66.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.10.4"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.MobileAds.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.MobileAds.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.Google.iOS.MobileAds.targets": {}
+        }
+      },
       "XamForms.Enhanced.Calendar/1.4.0": {
         "type": "package",
         "dependencies": {
@@ -1600,6 +1701,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MarcTron.Admob": "1.6.1",
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "13.0.1",
           "Plugin.FirebasePushNotification": "3.3.10",
@@ -1622,6 +1724,20 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "MarcTron.Admob/1.6.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Forms": "5.0.0.1905",
+          "Xamarin.Google.iOS.MobileAds": "7.66.0"
+        },
+        "compile": {
+          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -1948,7 +2064,7 @@
           "lib/xamarinios10/Firebase.CloudMessaging.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.Core/6.6.6": {
+      "Xamarin.Firebase.iOS.Core/6.10.4": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0"
@@ -2122,6 +2238,25 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Google.iOS.MobileAds/7.66.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Firebase.iOS.Core": "6.10.4"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.MobileAds.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.MobileAds.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.Google.iOS.MobileAds.targets": {}
+        }
+      },
       "XamForms.Enhanced.Calendar/1.4.0": {
         "type": "package",
         "dependencies": {
@@ -2140,6 +2275,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MarcTron.Admob": "1.6.1",
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "13.0.1",
           "Plugin.FirebasePushNotification": "3.3.10",
@@ -2163,6 +2299,24 @@
     }
   },
   "libraries": {
+    "MarcTron.Admob/1.6.1": {
+      "sha512": "I9tbe3YIwuBtfYuM8XFNx6NIyy4ln1QVBQv/SZUHUsKKnLiyaZGeTaYF3eg02t94i0qsWbR4KkaSBGJ+99D10g==",
+      "type": "package",
+      "path": "marctron.admob/1.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/Plugin.MtAdmob.dll",
+        "lib/netstandard1.0/Plugin.MtAdmob.dll",
+        "lib/netstandard2.0/Plugin.MtAdmob.dll",
+        "lib/uap10.0.18362/Plugin.MtAdmob.dll",
+        "lib/uap10.0.18362/Plugin.MtAdmob.pri",
+        "lib/xamarinios10/Plugin.MtAdmob.dll",
+        "marctron.admob.1.6.1.nupkg.sha512",
+        "marctron.admob.nuspec",
+        "readme.txt"
+      ]
+    },
     "Microsoft.Bcl/1.1.10": {
       "sha512": "+tTqoh/M1pyL8El3qLy30EcwnAtyvFoDZJtdG9Cbg/WdFbh4N8kyrq198XHuEL7lnJbeD0DRO8jcX5IIOh05cQ==",
       "type": "package",
@@ -3010,10 +3164,10 @@
         "xamarin.firebase.ios.cloudmessaging.nuspec"
       ]
     },
-    "Xamarin.Firebase.iOS.Core/6.6.6": {
-      "sha512": "GM43jhKOjzs2AwTNxPA3OFW/UVAM7oBWfYn0m9c56oOAAlPdpO7LebWXkLNa/vcFv9gtfCBrVVl+QIk8miwTDw==",
+    "Xamarin.Firebase.iOS.Core/6.10.4": {
+      "sha512": "b/cy0xmGUGlT/RxQt2mvlB9lL/tiNRcfsZsWH20lP7FI6H/xABAGAQU0MDKM84KTTOx8NN9CB95eY74NWKGQtw==",
       "type": "package",
-      "path": "xamarin.firebase.ios.core/6.6.6",
+      "path": "xamarin.firebase.ios.core/6.10.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3023,7 +3177,7 @@
         "buildTransitive/Xamarin.Firebase.iOS.Core.targets",
         "firebaseioscore_128x128.png",
         "lib/xamarinios10/Firebase.Core.dll",
-        "xamarin.firebase.ios.core.6.6.6.nupkg.sha512",
+        "xamarin.firebase.ios.core.6.10.4.nupkg.sha512",
         "xamarin.firebase.ios.core.nuspec"
       ]
     },
@@ -3273,6 +3427,23 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Google.iOS.MobileAds/7.66.0": {
+      "sha512": "e1SprUq3RNhNXyV2UCGI/2dte3nRcLDpXR/jlJj6h1OM+LVpGak/WzJp2yTQ7j1tgj8YDMrFAbYMtFVoLU7VKQ==",
+      "type": "package",
+      "path": "xamarin.google.ios.mobileads/7.66.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Xamarin.Google.iOS.MobileAds.targets",
+        "buildTransitive/Xamarin.Google.iOS.MobileAds.targets",
+        "googleiosmobileads_128x128.png",
+        "lib/xamarinios10/Google.MobileAds.dll",
+        "xamarin.google.ios.mobileads.7.66.0.nupkg.sha512",
+        "xamarin.google.ios.mobileads.nuspec"
+      ]
+    },
     "XamForms.Enhanced.Calendar/1.4.0": {
       "sha512": "e/kYjx5F9JJRpurq25zUb3ZDXDxvTP49KYcOzu+JZgTGwtbvqDV9kEt+uTePYNNGopZqwihFzMLmveO/NjQe4g==",
       "type": "package",
@@ -3297,6 +3468,7 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
+      "MarcTron.Admob >= 1.6.1",
       "Microsoft.Net.Http >= 2.2.29",
       "Newtonsoft.Json >= 13.0.1",
       "Plugin.LocalNotification >= 8.0.1",
@@ -3356,6 +3528,10 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "MarcTron.Admob": {
+            "target": "Package",
+            "version": "[1.6.1, )"
+          },
           "Microsoft.Net.Http": {
             "target": "Package",
             "version": "[2.2.29, )"

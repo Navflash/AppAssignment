@@ -3,13 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="phoneApp.Views.ImagePage"
              xmlns:Imageeditor="clr-namespace:Syncfusion.SfImageEditor.XForms;assembly=Syncfusion.SfImageEditor.XForms"
-             xmlns:local="clr-namespace:phoneApp.Views">
+             xmlns:local="clr-namespace:phoneApp.Views" xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob">
 
     <ContentPage.BindingContext>
         <local:ImageModel/>
     </ContentPage.BindingContext>
 
-    <ContentPage.Content>
-        <Imageeditor:SfImageEditor Source="{Binding Image}"/>
+    
+        <ContentPage.Content>
+        <Grid Margin="16,44,16,16">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Imageeditor:SfImageEditor Source="{Binding Image}" Grid.Row="1"/>
+            <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" Grid.Row="2" IsVisible="True" HeightRequest="100" />
+        </Grid>
     </ContentPage.Content>
+    
+
 </ContentPage>
