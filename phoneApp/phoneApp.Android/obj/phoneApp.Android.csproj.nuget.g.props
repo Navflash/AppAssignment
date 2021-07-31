@@ -23,6 +23,7 @@
     <Import Project="$(NuGetPackageRoot)xamarin.build.download\0.10.0\buildTransitive\Xamarin.Build.Download.props" Condition="Exists('$(NuGetPackageRoot)xamarin.build.download\0.10.0\buildTransitive\Xamarin.Build.Download.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgTweetinviAPI Condition=" '$(PkgTweetinviAPI)' == '' ">C:\Users\nvnt2\.nuget\packages\tweetinviapi\5.0.4</PkgTweetinviAPI>
     <PkgMicrosoft_Bcl_Build Condition=" '$(PkgMicrosoft_Bcl_Build)' == '' ">C:\Users\nvnt2\.nuget\packages\microsoft.bcl.build\1.0.14</PkgMicrosoft_Bcl_Build>
   </PropertyGroup>
 </Project>

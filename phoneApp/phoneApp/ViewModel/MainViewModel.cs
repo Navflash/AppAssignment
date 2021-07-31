@@ -43,22 +43,6 @@ namespace phoneApp.ViewModel
 
             Userslist = await userservices.GetUsersAsync();
         }
-        public INavigation Navigation { get; set; }
-
-        public MainViewModel(INavigation navigation)
-        {
-            Navigation = navigation;
-        }
-
-        //public Command GetUsersFromApi
-        //{
-        //    get
-        //    {
-        //        return new Command(async() =>
-        //        {
-        //            await Navigation.PushAsync(new AllUsersPage());
-        //        });
-        //    }
-        //}
+        
     }
 }

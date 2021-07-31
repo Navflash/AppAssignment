@@ -67,22 +67,6 @@ public class FFBitmapDrawable
 	}
 
 
-	public FFBitmapDrawable (java.io.InputStream p0)
-	{
-		super (p0);
-		if (getClass () == FFBitmapDrawable.class)
-			mono.android.TypeManager.Activate ("FFImageLoading.Drawables.FFBitmapDrawable, FFImageLoading.Platform", "System.IO.Stream, mscorlib", this, new java.lang.Object[] { p0 });
-	}
-
-
-	public FFBitmapDrawable (java.lang.String p0)
-	{
-		super (p0);
-		if (getClass () == FFBitmapDrawable.class)
-			mono.android.TypeManager.Activate ("FFImageLoading.Drawables.FFBitmapDrawable, FFImageLoading.Platform", "System.String, mscorlib", this, new java.lang.Object[] { p0 });
-	}
-
-
 	public void onBoundsChange (android.graphics.Rect p0)
 	{
 		n_onBoundsChange (p0);

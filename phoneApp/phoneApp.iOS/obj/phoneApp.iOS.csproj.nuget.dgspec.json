@@ -64,9 +64,17 @@
               "target": "Package",
               "version": "[19.2.0.48, )"
             },
+            "TweetinviAPI": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
             "XamForms.Enhanced.Calendar": {
               "target": "Package",
               "version": "[1.4.0, )"
+            },
+            "Xamarin.Auth": {
+              "target": "Package",
+              "version": "[1.7.0, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -179,9 +187,21 @@
               "target": "Package",
               "version": "[19.2.0.48, )"
             },
+            "TweetinviAPI": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Twilio": {
+              "target": "Package",
+              "version": "[5.64.1, )"
+            },
             "XamForms.Enhanced.Calendar": {
               "target": "Package",
               "version": "[1.4.0, )"
+            },
+            "Xamarin.Auth": {
+              "target": "Package",
+              "version": "[1.7.0, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

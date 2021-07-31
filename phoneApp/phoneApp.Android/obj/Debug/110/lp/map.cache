@@ -71,6 +71,7 @@ Xamarin.AndroidX.VersionedParcelable.dll
 Xamarin.AndroidX.ViewPager.dll
 Xamarin.AndroidX.ViewPager2.dll
 Xamarin.AndroidX.Work.Runtime.dll
+Xamarin.Auth.dll
 Xamarin.Essentials.dll
 Xamarin.Firebase.Common.dll
 Xamarin.Firebase.Iid.dll

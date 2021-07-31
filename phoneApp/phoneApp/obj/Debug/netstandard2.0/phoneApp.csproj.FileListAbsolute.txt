@@ -13,5 +13,5 @@ C:\Users\nvnt2\source\repos\phoneApp\phoneApp\phoneApp\obj\Debug\netstandard2.0\
 C:\Users\nvnt2\source\repos\phoneApp\phoneApp\phoneApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Users\nvnt2\source\repos\phoneApp\phoneApp\phoneApp\obj\Debug\netstandard2.0\Views\AllUsersPage.xaml.g.cs
 C:\Users\nvnt2\source\repos\phoneApp\phoneApp\phoneApp\obj\Debug\netstandard2.0\Views\ImagePage.xaml.g.cs
-C:\Users\nvnt2\source\repos\phoneApp\phoneApp\phoneApp\obj\Debug\netstandard2.0\phoneApp.csproj.AssemblyReference.cache
 C:\Users\nvnt2\source\repos\phoneApp\phoneApp\phoneApp\obj\Debug\netstandard2.0\Views\Calendar.xaml.g.cs
+C:\Users\nvnt2\source\repos\phoneApp\phoneApp\phoneApp\obj\Debug\netstandard2.0\phoneApp.csproj.AssemblyReference.cache

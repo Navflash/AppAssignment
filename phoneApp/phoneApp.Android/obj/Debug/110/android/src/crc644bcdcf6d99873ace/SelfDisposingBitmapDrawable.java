@@ -64,22 +64,6 @@ public class SelfDisposingBitmapDrawable
 	}
 
 
-	public SelfDisposingBitmapDrawable (java.io.InputStream p0)
-	{
-		super (p0);
-		if (getClass () == SelfDisposingBitmapDrawable.class)
-			mono.android.TypeManager.Activate ("FFImageLoading.Drawables.SelfDisposingBitmapDrawable, FFImageLoading.Platform", "System.IO.Stream, mscorlib", this, new java.lang.Object[] { p0 });
-	}
-
-
-	public SelfDisposingBitmapDrawable (java.lang.String p0)
-	{
-		super (p0);
-		if (getClass () == SelfDisposingBitmapDrawable.class)
-			mono.android.TypeManager.Activate ("FFImageLoading.Drawables.SelfDisposingBitmapDrawable, FFImageLoading.Platform", "System.String, mscorlib", this, new java.lang.Object[] { p0 });
-	}
-
-
 	public void finalize ()
 	{
 		n_finalize ();
